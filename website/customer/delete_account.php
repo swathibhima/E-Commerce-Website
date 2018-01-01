@@ -24,7 +24,7 @@ include("includes/db.php");
 		 
 		 echo "<script>alert('we are really sorry, your accout has been deleted!')<script>";
 		 
-		 echo "<script>window.open('../index.php', '_self')<script>";
+		 echo "<script>window.open('index.php', '_self')<script>";
 		 	
 	}
 	if(isset($_POST['no'])){

@@ -16,7 +16,7 @@ else {
 	<head>
 		<title>This is Admin Panel</title> 
 		
-	<link rel="stylesheet" href="styles/style.css" media="all" /> 
+	<link rel="stylesheet" href="styles/style2.css" media="all" /> 
 	</head>
 
 

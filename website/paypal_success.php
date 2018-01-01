@@ -13,6 +13,28 @@ session_start();
 <body>
 
 <?php
+
+		$amount = $_POST['amount'];
+		$currency = $_POST['currency_code'];
+		$itemName = $_POST['item_name'];
+		$trx_id = $_POST['tax'];
+		
+		echo "Displaying hidden values:"
+		echo "Item Name: "$itemName ;
+		echo "Amount: " $amount;
+		echo "Currency: " $currency;
+		echo "Transaction Id:" $trx_id;
+		
+		echo "<h2>Welcome:" . $_SESSION['customer_email'] . '<br>' . "your payment was successful!</h2>";
+						
+		echo"<a href ='http://ecommerceapp-env.us-west-1.elasticbeanstalk.com/customer/my_account.php'> Go to your account</a>";
+		
+		
+
+		
+		 
+
+/*						
 		include("includes/db.php");
 		
 		include("functions/functions.php");
@@ -63,8 +85,9 @@ session_start();
 				}else{
 					
 					$qty =$qty;
-				
-							}
+					
+					$total =$total*$qty;
+				}
 			
 		
 			// this is about the customer
@@ -84,10 +107,14 @@ session_start();
 					//payment details from paypal
 
 
-					$amount =$_GET['amt'];
-					$currency =$_GET['cc'];
+					$amount =$_GET['amount'];
+					$currency =$_GET['currency_code'];
 
-					$trx_id =$_GET['tx'];
+					$trx_id =$_GET['tax'];
+					
+					 echo $amount;
+					 echo $currency;
+					 echo $trx_id;
 
 			//inserting the payment to table
 						$insert_payments ="insert into payments (amount,customer_id, product_id,trx_id,currency) values('$c_id','$pro_id','$trx_id','$currency')";
@@ -111,18 +138,18 @@ session_start();
 						
 						echo "<h2>Welcome:" . $_SESSION['customer_email'] . '<br>' . "your payment was successful!</h2>";
 						
-						echo"<a href ='http://www.onlineshoping.com/myshop/customer/my_account.php'> Go to your account</a>";
+						echo"<a href ='http://ecommerceapp-env.us-west-1.elasticbeanstalk.com/customer/my_account.php'> Go to your account</a>";
 						
 						
 					}else{
 						
-						echo"<h2>Welcome Gust, Payment was failed</h2><br>";
+						echo"<h2>Welcome Guest, Payment was failed</h2><br>";
 						
-						echo"<a href ='http://www.onlineshoping.com/myshop/customer/my_account.php'> Go back to shop</a>";
+						echo"<a href ='http://ecommerceapp-env.us-west-1.elasticbeanstalk.com/customer/my_account.php'> Go back to shop</a>";
 						
 						
 					}	
-
+*/
 
 
 ?>

@@ -9,7 +9,7 @@ include("functions/functions.php");
 
 <head>
 	<title> My online Shop</title>
-	<link rel= "stylesheet" href ="styles/style1.css"  media ="all" type ="text/css"> 
+	<link rel= "stylesheet" href ="styles/style2.css"  media ="all" type ="text/css"> 
 </head>
 
 <body>
@@ -116,7 +116,7 @@ include("functions/functions.php");
 		
 	echo "<div id ='single_product'>
 		<h3> $pro_title </h3>
-		<image src ='admin_area/product_images/$pro_image' width ='400'  height ='300'/>
+		<image src ='product_images/$pro_image' width ='400'  height ='300'/>
 	
 		<p> <b> $$pro_price</b></p>
 		

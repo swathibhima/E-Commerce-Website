@@ -1,12 +1,6 @@
 <?php
 
-	$con = mysqli_connect("localhost","root","root","website");
-
-	if (mysqli_connect_errno()){
-	
-		echo "my sqli connection failed: ". mysqli_connect_errno();
-	
-	}
+	include("includes/db.php");
 	
 	//getting the user IP address
 	
@@ -228,7 +222,7 @@ function getpro(){
 		
 	echo "<div id ='single_product'>
 		<h3> $pro_title </h3>
-		<image src ='admin_area/product_images/$pro_image' width ='180'  height ='180'/>
+		<image src ='product_images/$pro_image' width ='180'  height ='180'/>
 	
 		<p> <b>Price: $$pro_price</b></p>
 		
@@ -297,7 +291,7 @@ function getCatpro(){
 		
 	echo "<div id ='single_product'>
 		<h3> $pro_title </h3>
-		<image src ='admin_area/product_images/$pro_image' width ='180'  height ='180'/>
+		<image src ='product_images/$pro_image' width ='180'  height ='180'/>
 	
 		<p> <b> $$pro_price</b></p>
 		
@@ -363,7 +357,7 @@ function getBrandpro(){
 		
 	echo "<div id ='single_product'>
 		<h3> $pro_title </h3>
-		<image src ='admin_area/product_images/$pro_image' width ='180'  height ='180'/>
+		<image src ='product_images/$pro_image' width ='180'  height ='180'/>
 	
 		<p> <b> $$pro_price</b></p>
 		

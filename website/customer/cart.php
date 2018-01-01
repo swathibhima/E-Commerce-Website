@@ -12,7 +12,7 @@ include("functions/functions.php");
 
 <head>
 	<title> My online Shop</title>
-	<link rel= "stylesheet" href ="styles/style1.css"  media ="all" type ="text/css"> 
+	<link rel= "stylesheet" href ="styles/style2.css"  media ="all" type ="text/css"> 
 </head>
 
 <body>
@@ -35,7 +35,7 @@ include("functions/functions.php");
 			<ul id ="menu">
 				<li><a href ="index.php">Home</a></li>
 				<li><a href ="all_products.php">All products</a></li>
-				<li><a href ="customer/my_account.php">My Account</a></li>
+				<li><a href ="my_account.php">My Account</a></li>
 				<li><a href ="#">Sign Up</a></li>
 				<li><a href ="cart.php">Shopping Cart</a></li>
 				<li><a href ="#">Contact Us</a></li>
@@ -191,7 +191,7 @@ include("functions/functions.php");
 						<tr align="center">
 						<td><input type="checkbox" name="remove[]" value="<?php echo $pro_id;?>"/></td>
 						<td><?php echo $product_title; ?><br><br>
-						<img src="admin_area/product_images/<?php echo $product_image;?>" width="60" height="60"/>
+						<img src="product_images/<?php echo $product_image;?>" width="60" height="60"/>
 						</td>
 						<td><input type="text" size="4" name="qty" value="<?php echo $_SESSION['qty'];?>"/></td>
 						<?php 

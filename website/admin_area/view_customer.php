@@ -41,7 +41,7 @@
 		
 		<td><?php echo $c_email; ?></td>
 		
-		<td><img src ="../customer/customer_images/<?php echo $c_image; ?>" width ="50" height ="50"/></td>
+		<td><img src ="customer/customer_images/<?php echo $c_image; ?>" width ="50" height ="50"/></td>
 		
 		<td><a href ="delete_c.php?delete_c=<?php echo $c_id; ?> ">Delete</a></td>
 		

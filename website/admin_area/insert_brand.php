@@ -7,7 +7,7 @@
 </form>
 
 <?php 
-include("includes/db.php"); 
+    include("includes/db.php"); 
 
 	if(isset($_POST['add_brand'])){
 	

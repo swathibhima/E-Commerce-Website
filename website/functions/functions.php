@@ -1,13 +1,8 @@
 <?php
 
-	$con = mysqli_connect("localhost","root","root","website");
+  include("includes/db.php");
 
-	if (mysqli_connect_errno()){
-	
-		echo "my sqli connection failed: ". mysqli_connect_errno();
-	
-	}
-	
+
 	//getting the user IP address
 	
 	function getIp() {
@@ -216,7 +211,7 @@ function getpro(){
     exit();
 }*/
 	
-	
+
 	while($row_pro =mysqli_fetch_array($run_pro)){
 		
 	$pro_id =$row_pro['product_id'];
@@ -348,7 +343,7 @@ function getBrandpro(){
     exit();
 }*/
 	
-	
+
 	while($row_brand_pro =mysqli_fetch_array($run_brands_pro)){
 		
 	$pro_id =$row_brand_pro['product_id'];

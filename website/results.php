@@ -9,7 +9,7 @@ include("functions/functions.php");
 
 <head>
 	<title> My online Shop</title>
-	<link rel= "stylesheet" href ="styles/style.css"  media ="all" type ="text/css"> 
+	<link rel= "stylesheet" href ="styles/style1.css"  media ="all" type ="text/css"> 
 </head>
 
 <body>
@@ -18,7 +18,7 @@ include("functions/functions.php");
 	<!-- header starts  here---->
 		<div class ="header_wrapper"> 
 		
-			<a href ="index.php"><img id ="logo" src ="images/images.png" width="250" height ="150"/></a>
+			<a href ="index.php"><img id ="logo" src ="images/images1.png" width="250" height ="150"/></a>
 			<img  id ="banner" src ="images/images.jpg" width ="749"  height ="150"  />
 		
 		</div>
@@ -144,7 +144,7 @@ include("functions/functions.php");
 		
 		<div id="footer"> 
 		
-		<h2 style ="text-align:center; padding-top:30px;">&copy; 2017 by www.onlineTuting.com</h2>
+		<h2 style ="text-align:center; padding-top:30px;">&copy; 2017 by www.bhimaonline.com</h2>
 		
 		
 		</div>

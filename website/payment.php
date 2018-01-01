@@ -31,9 +31,32 @@
 			
 			$total +=$values;
 			
-			}
+			
+			
 			
 		}
+		
+		}
+			
+			// getting quantity of the product
+			
+			$get_qty ="select * from cart where p_id ='$pro_id'";
+			
+			$run_qty =mysqli_query($con, $get_qty);
+			
+			$row_qty =mysqli_fetch_array($run_qty);
+			
+			$qty =$row_qty['qty'];
+			if($qty==0){
+				$qty =1;
+				}else{
+					
+					$qty =$qty;
+					$total =$total*$qty;
+			
+			}
+			
+		
 
 ?>
 
@@ -49,19 +72,17 @@
 
   <!-- Specify details about the item that buyers will purchase. -->
   <input type="hidden" name="item_name" value="<?php echo $product_name; ?>"/>
-  
   <input type="hidden" name="item_number" value="<?php echo$pro_id; ?>">
   <input type="hidden" name="amount" value="<?php echo $total; ?>">
   <input type="hidden" name="quantity" value="<?php echo $qty; ?>"/>
   <input type="hidden" name="currency_code" value="USD">
-  
-  <input type ="hidden" name ="return" value ="http://www.onlineshoping.com/myshop/paypal_success.php"/>
-  
-  <input type ="hidden" name ="cancel_return" value ="http://www.onlineshoping.com/myshop/paypal_cancel.php"/>
+  <input type ="hidden" name ="return" value ="http://ecommerceapp-env.us-west-1.elasticbeanstalk.com/paypal_success.php"/>
+  <input type ="hidden" name ="cancel_return" value ="http://ecommerceapp-env.us-west-1.elasticbeanstalk.com/paypal_cancel.php"/>
+  <input type="hidden" name="rm" value="2">
 
   <!-- Display the payment button. -->
   <input type="image" name="submit" border="0"
-  src="paypal_button.png" 
+  src="images/paypal_button.png" 
   alt="Buy Now">
   <img alt="" border="0" width="1" height="1"
   src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
