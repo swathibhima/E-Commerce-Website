@@ -1,12 +1,5 @@
-# E-Commerce-Website
-E-Commerce Website using PHP and MySQL
+# eCommerce(an Online Shopping Store) Web Application:
 
-Here is the website url: 
-http://ecommerceapp-env.us-west-1.elasticbeanstalk.com
-
-<b>eCommerce(an Online Shopping Store) Web Application: </b><br>
-<hr>
-<br>
 <p>
 I have created eCommerce(an Online Shopping Store) Web Application using PHP, MySQL, HTML, CSS3, JavaScript, Brackets/Notepad++ and XAMPP to create this whole project. E-commerce is online shopping store for selling/buying products.
 </p>
@@ -22,3 +15,7 @@ I have created eCommerce(an Online Shopping Store) Web Application using PHP, My
   <li>Created the Admin Panel for E-Commerce</li>
   <li>Configured and deployed in AWS cloud services</li>
 </ul>
+<br>
+<p>
+Here is the website url: http://ecommerceapp-env.us-west-1.elasticbeanstalk.com
+</p>
