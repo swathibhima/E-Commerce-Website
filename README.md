@@ -17,5 +17,8 @@ I have created eCommerce(an Online Shopping Store) Web Application using PHP, My
 </ul>
 <br>
 <p>
-Here is the website url: http://ecommerceapp-env.us-west-1.elasticbeanstalk.com
+Here is the website url hosted in Heroku server: https://bhimaonline.herokuapp.com
+</p>
+<p>
+Here is the website url hosted in AWS server(Currently instances are stopped): http://ecommerceapp-env.us-west-1.elasticbeanstalk.com
 </p>
